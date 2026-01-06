@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDemandeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utilisateur"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvDemandeFournitureSouhaitee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fourniture souhaitée"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvDemandeFournitureOfferte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fourniture offerte"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvDemandeStatut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statut : En attente"
+            android:textSize="14sp"
+            android:textColor="#FF5722"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accepter"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnRefuse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Refuser"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
